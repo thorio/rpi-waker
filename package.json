@@ -1,0 +1,17 @@
+{
+	"name": "webhooks",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"run": "node main.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"app-root-path": "^2.2.1",
+		"eslint": "^6.8.0",
+		"mqtt": "^3.0.0",
+		"request": "^2.88.0",
+		"wake_on_lan": "^1.0.0"
+	}
+}
