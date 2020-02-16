@@ -1,12 +1,13 @@
 {
-	"name": "webhooks",
+	"name": "rpi-waker",
 	"version": "1.0.0",
-	"description": "",
+	"description": "sends WOL packets on receiving adafruit.io datapoint",
 	"scripts": {
-		"run": "node main.js"
+		"start": "node src/main.js",
+		"build": "docker build -t rpi-waker ."
 	},
-	"author": "",
-	"license": "ISC",
+	"author": "thorou",
+	"license": "GPL-3.0",
 	"dependencies": {
 		"app-root-path": "^2.2.1",
 		"eslint": "^6.8.0",
