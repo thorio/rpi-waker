@@ -1,8 +1,7 @@
 const mqtt = require('mqtt'),
 	wol = require("wake_on_lan"),
-	rpath = require("app-root-path"),
 	req = require("request"),
-	config = require(`${rpath}/config.json`);
+	config = require("./config");
 
 let client = mqtt.connect('mqtts://io.adafruit.com', { username: config.mqtt.username, password: config.mqtt.key });
 

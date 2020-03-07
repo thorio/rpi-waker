@@ -8,7 +8,6 @@ WORKDIR /app
 COPY src/ src/
 COPY package.json .
 COPY package-lock.json .
-COPY config.json .
 
 RUN npm i
 
