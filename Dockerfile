@@ -1,14 +1,9 @@
 FROM node:12-slim
 
-RUN apt update
-RUN apt install libatomic1
-
-RUN mkdir -p /app
 WORKDIR /app
-COPY src/ src/
-COPY package.json .
-COPY package-lock.json .
+COPY package.json package-lock.json ./
+RUN npm i --production
 
-RUN npm i
+COPY src/ src/
 
 CMD npm run start
